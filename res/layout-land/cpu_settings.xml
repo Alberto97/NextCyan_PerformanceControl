@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.5">
+            <TextView android:textSize="39.0sp" android:id="@id/current_speed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" />
+            <TextView android:textSize="18.0sp" android:id="@id/current_speed_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/current_speed" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <TextView android:textSize="16.0sp" android:id="@id/current_max_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/current_max" />
+                <TextView android:textSize="16.0sp" android:id="@id/max_speed_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <SeekBar android:id="@id/max_slider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginRight="17.0dip" style="?android:attr/progressBarStyleHorizontal" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="16.0sp" android:id="@id/current_min_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/current_min" />
+                <TextView android:textSize="16.0sp" android:id="@id/min_speed_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <SeekBar android:id="@id/min_slider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginRight="17.0dip" style="?android:attr/progressBarStyleHorizontal" />
+        </LinearLayout>
+        <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.5">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="25.0dip">
+                <TextView android:textSize="14.0sp" android:id="@id/governor_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/governor" />
+                <Spinner android:id="@id/pref_governor" android:layout_width="142.0dip" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+                <TextView android:textSize="14.0sp" android:id="@id/io_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/io" />
+                <Spinner android:id="@id/pref_io" android:layout_width="142.0dip" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip">
+                <TextView android:textSize="14.0sp" android:id="@id/set_on_boot_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sob" />
+                <Switch android:id="@id/cpu_sob" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

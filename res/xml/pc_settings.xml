@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/pt_use_light_theme" android:key="use_light_theme" android:summary="@string/ps_use_light_theme" />
+    <net.margaritov.preference.colorpicker.ColorPickerPreference android:title="@string/pt_widget_bg_color" android:key="widget_bg_color" android:defaultValue="\#ff000000" />
+    <net.margaritov.preference.colorpicker.ColorPickerPreference android:title="@string/pt_widget_text_color" android:key="widget_text_color" android:defaultValue="\#ff808080" />
+    <Preference android:key="version_info" />
+</PreferenceScreen>

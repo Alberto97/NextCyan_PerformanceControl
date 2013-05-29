@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:text="@string/kernel_info" style="?android:attr/listSeparatorTextViewStyle" />
+        <TextView android:id="@id/kernel_info" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:text="@string/cpu_info" style="?android:attr/listSeparatorTextViewStyle" />
+        <TextView android:id="@id/cpu_info" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:text="@string/mem_info" style="?android:attr/listSeparatorTextViewStyle" />
+        <TextView android:id="@id/mem_info" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

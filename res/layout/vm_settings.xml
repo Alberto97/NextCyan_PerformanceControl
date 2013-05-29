@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/dirty_ratio_title" android:key="pref_dirty_ratio" />
+    <Preference android:title="@string/dirty_background_title" android:key="pref_dirty_background" />
+    <Preference android:title="@string/dirty_expire_title" android:key="pref_dirty_expire" />
+    <Preference android:title="@string/dirty_writeback_title" android:key="pref_dirty_writeback" />
+    <Preference android:title="@string/min_free_title" android:key="pref_min_free_kb" />
+    <Preference android:title="@string/overcommit_title" android:key="pref_overcommit" />
+    <Preference android:title="@string/swappiness_title" android:key="pref_swappiness" />
+    <Preference android:title="@string/vfs_title" android:key="pref_vfs" />
+    <CheckBoxPreference android:title="@string/sob" android:key="vm_sob" android:summary="@string/ps_vm_set_on_boot" android:defaultValue="false" />
+</PreferenceScreen>

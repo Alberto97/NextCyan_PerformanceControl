@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/prefcat_free_memory" android:key="performance">
+        <ListPreference android:persistent="true" android:entries="@array/minfree" android:title="@string/pt_free_memory" android:key="pref_minfree" android:summary="@string/ps_free_memory" android:dialogTitle="@string/dt_free_memory" android:entryValues="@array/minfree_values" />
+        <CheckBoxPreference android:title="@string/sob" android:key="pref_minfree_boot" android:summary="@string/ps_free_memory_boot" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/prefcat_read_ahead" android:key="category_read_ahead">
+        <ListPreference android:persistent="true" android:entries="@array/read_ahead" android:title="@string/pt_read_ahead" android:key="pref_read_ahead" android:dialogTitle="@string/dt_read_ahead" android:entryValues="@array/read_ahead_values" />
+        <CheckBoxPreference android:title="@string/sob" android:key="pref_read_ahead_boot" android:summary="@string/ps_read_ahead_boot" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/prefcat_tweaks" android:key="kernel">
+        <CheckBoxPreference android:title="@string/pt_fast_charge_boot" android:key="pref_fast_charge" android:summary="@string/ps_fast_charge_boot" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/prefcat_vm_settings" android:key="vm_settings">
+        <Preference android:title="@string/dirty_ratio_title" android:key="pref_dirty_ratio" />
+        <Preference android:title="@string/dirty_background_title" android:key="pref_dirty_background" />
+        <Preference android:title="@string/dirty_expire_title" android:key="pref_dirty_expire" />
+        <Preference android:title="@string/dirty_writeback_title" android:key="pref_dirty_writeback" />
+        <Preference android:title="@string/min_free_title" android:key="pref_min_free_kb" />
+        <Preference android:title="@string/overcommit_title" android:key="pref_overcommit" />
+        <Preference android:title="@string/swappiness_title" android:key="pref_swappiness" />
+        <Preference android:title="@string/vfs_title" android:key="pref_vfs" />
+        <CheckBoxPreference android:title="@string/sob" android:key="vm_sob" android:summary="@string/ps_vm_set_on_boot" android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>
