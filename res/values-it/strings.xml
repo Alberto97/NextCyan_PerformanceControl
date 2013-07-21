@@ -1,20 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+Performance Control - An Android CPU Control application
+Copyright (C) 2012  James Roberts
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
 <resources>
+
     <string name="app_name">Performance Control</string>
+	<!-- Main tabs -->
     <string name="tab_cpu_settings">Impostazioni CPU</string>
     <string name="tab_cpu_profiles">Profili CPU</string>
     <string name="tab_time_in_state">Tempo in Stato</string>
     <string name="tab_voltage_settings">Impostazioni Voltaggio</string>
     <string name="tab_cpu_info">Informazioni CPU</string>
+	<!-- Titles -->
     <string name="t_cpu_settings">IMPOSTAZIONI CPU</string>
     <string name="t_volt_settings">IMPOSTAZIONI VOLTAGGIO</string>
     <string name="t_adv_settings">IMPOSTAZIONI AVANZATE</string>
     <string name="t_time_in_state">TEMPO IN STATO</string>
     <string name="t_cpu_info">INFORMAZIONI CPU</string>
+	<!-- Menu -->
     <string name="mt_refresh">Aggiorna</string>
     <string name="mt_app_settings">Impostazioni Applicazioni</string>
     <string name="mt_reset">Resetta</string>
     <string name="mt_restore">Ripristina</string>
+	<!-- CPU settings -->
     <string name="current_speed">Velocità Corrente</string>
     <string name="current_max">Corrente max:</string>
     <string name="current_min">Corrente min:</string>
@@ -23,6 +46,7 @@
     <string name="sob">"Applica all'avvio"</string>
     <string name="ok">OK</string>
     <string name="cancel">Annulla</string>
+	<!-- Other settings -->
     <string name="prefcat_free_memory">MEMORIA LIBERA</string>
     <string name="prefcat_tweaks">TWEAKS KERNEL(SE SUPPORTATI)</string>
     <string name="prefcat_misc_short">MISC</string>
@@ -32,7 +56,7 @@
     <string name="dt_read_ahead">Lettura in anticipo SD</string>
     <string name="pt_free_memory">Memoria Libera</string>
     <string name="ps_free_memory">Quantità di RAM che il minfree taskkiller deve mantenere | Corrente: %s</string>
-    <string name="ps_free_memory_boot">"Applicare all'avvio l'importo precedente"</string>
+    <string name="ps_free_memory_boot">"Applicare all'avvio il valore precedente"</string>
     <string name="pt_read_ahead">Lettura SD in anticipo</string>
     <string name="ps_read_ahead">Quantità di RAM che il minfree taskkiller deve mantenere | Corrente: %s</string>
     <string name="ps_read_ahead_boot">"Applicare all'avvio la quantità precedente"</string>
@@ -54,6 +78,7 @@ Questa impostazione è configurata come carica rapida impostata a ogni riavvio. 
     <string name="size_1024_kb">1024kb</string>
     <string name="size_2048_kb">2048kb</string>
     <string name="size_4096_kb">4096kb</string>
+	<!-- Voltage control -->
     <string name="ps_volt_mhz_voltage">" Voltaggio MHz"</string>
     <string name="ps_volt_save">Salva</string>
     <string name="ps_volt_current_voltage">"Voltaggio Corrente: "</string>
@@ -65,6 +90,7 @@ Questa impostazione è configurata come carica rapida impostata a ogni riavvio. 
     <string name="current">mV corrente</string>
     <string name="saved">mV salvato</string>
     <string name="not_supported">Il tuo kernel non supporta il controllo voltaggio</string>
+	<!-- VM settings -->
     <string name="ps_vm_set_on_boot">"Se abilitato, saranno ripristinate tutte le impostazioni vm all'avvio"</string>
     <string name="dirty_ratio_title">Dirty ratio</string>
     <string name="dirty_background_title">Dirty background ratio</string>
@@ -74,6 +100,7 @@ Questa impostazione è configurata come carica rapida impostata a ogni riavvio. 
     <string name="overcommit_title">Overcommit ratio</string>
     <string name="swappiness_title">Swappiness</string>
     <string name="vfs_title">VFS cache pressure</string>
+	<!-- Time in state -->
     <string name="time_in_state">TEMPO IN STATO</string>
     <string name="unused_cpu_states">STATO CPU NON USATA</string>
     <string name="total_state_time">TEMPO TOTALE IN STATO</string>
@@ -81,6 +108,7 @@ Questa impostazione è configurata come carica rapida impostata a ogni riavvio. 
 
 Se stai usando una custom ROM o Kernel, prova a contattare lo sviluppatore per informarlo che i files di stato non sono leggibili."</string>
     <string name="deep_sleep">Deep Sleep</string>
+	<!-- CPU info -->
     <string name="kernel_info">INFORMAZIONI KERNEL LINUX</string>
     <string name="cpu_info">INFORMAZIONI CPU</string>
     <string name="mem_info">INFORMAZIONI MEMORIA</string>
@@ -91,11 +119,13 @@ Se stai usando una custom ROM o Kernel, prova a contattare lo sviluppatore per i
     <string name="su_success_message">Performance Control è in grado di ottenere i permessi root e di accedere a busybox. Pronto per la modifica!</string>
     <string name="su_cancel_message">Hai scelto di non controllare i diritti root e busybox. La maggior parte delle opzioni non funzionerà senza permessi root</string>
     <string name="su_failed_su_or_busybox">Accesso Root fallito or busybox non è stato trovato. La maggior parte delle opzioni non funzionerà senza permessi root</string>
-    <string name="pt_use_light_theme">Usa il tema chiaro</string>
+    <!-- PC Settings -->
+	<string name="pt_use_light_theme">Usa il tema chiaro</string>
     <string name="ps_use_light_theme">Se selezionato, Performance Control userà il tema Holo light</string>
     <string name="pt_widget_bg_color">Colore Widget</string>
     <string name="pt_widget_text_color">Colore del testo del Widget</string>
     <string name="pt_ver">"Versione - "</string>
+	<!-- Color picker -->
     <string name="dialog_color_picker">Selettore colore</string>
     <string name="press_color_to_apply">Premi sul colore per applicarlo</string>
     <string name="arrow_right">→</string>
@@ -104,4 +134,5 @@ Se stai usando una custom ROM o Kernel, prova a contattare lo sviluppatore per i
     <string name="hex_hint">\#FF000000</string>
     <string name="set">Imposta</string>
     <string name="ics_color">Holo</string>
+	
 </resources>
